@@ -57,9 +57,7 @@ export const startServer = () => {
         data,
       });
     } catch (error) {
-      res.status(500).json({
-        message: error.message,
-      });
+      error.message;
     }
   });
 
